@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tic-Tac-Toe Game</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav>
+
+    <div class="logo">
+    <img src="images/logo.png" alt="Logo">
+    
+</div>
+
+        <ul>
+
+            <li><a href="#home">Home</a></li>
+
+            <li><a href="#game">Game</a></li>
+
+            <li><a href="#about">About</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+    <button id="themeBtn" class="theme-btn">🌙</button>  
+
+    </nav>
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section id="home" class="hero">
+
+    <h1>Ultimate Tic-Tac-Toe </h1>
+
+    <p>
+        Challenge your friends or play against AI with a modern, responsive and interactive Tic-Tac-Toe experience.
+    </p>
+
+    <button onclick="location.href='#game'">
+        Start Playing →
+    </button>
+     
+    
+
+    <div class="hero-features">
+
+        <span>🎮 Multiplayer</span>
+
+        <span>🤖 Smart AI</span>
+
+        <span>🏆 Live Score</span>
+
+    </div>
+    <div class="hero-stats">
+
+    <div class="stat">
+        ⚡ <span>Fast Gameplay</span>
+    </div>
+
+    <div class="stat">
+        🎨 <span>Modern UI</span>
+    </div>
+
+    <div class="stat">
+        📱 <span>Fully Responsive</span>
+    </div>
+
+</div>
+
+</section>
+
+<!-- ================= GAME ================= -->
+
+<section id="game" class="game">
+
+    <h2>Ultimate Tic-Tac-Toe Arena</h2>
+    <div class="mode-selection">
+
+    <button id="pvpBtn">👥 Player vs Player</button>
+
+    <button id="aiBtn">🤖 Player vs Computer</button>
+
+</div>
+
+    <p class="turn">
+
+🎮 Current Turn :
+<span>X</span>
+
+</p>
+<p class="timer">
+
+⏱ Time :
+<span id="timer">00</span>s
+
+</p>
+<p id="aiThinking" style="display:none;">
+    🤖 Computer is thinking...
+</p>
+     
+    <div class="scoreboard">
+
+    <div class="score-card">
+
+        🔵 Player X
+
+        <h3 id="xScore">0</h3>
+
+    </div>
+
+    <div class="score-card">
+
+        🤝 Draw
+
+        <h3 id="drawScore">0</h3>
+
+    </div>
+
+    <div class="score-card">
+
+        🔴 Player O
+
+        <h3 id="oScore">0</h3>
+
+    </div>
+
+</div>
+    <div class="board">
+
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+
+    </div>
+
+    <button id="restartBtn">
+
+🔄 Restart Game
+
+</button>
+<div class="statistics">
+
+    <h2>📊 Game Statistics</h2>
+
+    <div class="stats-grid">
+
+        <div>Total Games <span id="totalGames">0</span></div>
+
+        <div>X Wins <span id="totalWinsX">0</span></div>
+
+        <div>O Wins <span id="totalWinsO">0</span></div>
+
+        <div>Draws <span id="totalDraws">0</span></div>
+
+        <div>Win Rate <span id="winRate">0%</span></div>
+
+        <div>Best Streak <span id="bestStreak">0</span></div>
+
+    </div>
+
+    <button id="resetStatsBtn">
+
+        🗑 Reset Statistics
+
+    </button>
+
+</div>
+
+</section>
+
+<!-- ================= WINNER POPUP ================= -->
+
+<div class="popup" id="popup">
+    <div id="confetti"></div>
+
+   <div class="popup-content">
+
+    <div class="popup-icon">🏆</div>
+
+    <h2 id="winnerMessage"></h2>
+
+    <button id="playAgainBtn">
+        🔄 Play Again
+    </button>
+
+</div>
+
+</div>
+
+    <!-- ================= ABOUT SECTION ================= -->
+
+    <section id="about" class="about">
+
+    <h2 class="section-heading">Game Overview</h2>
+    <p class="sub-heading">About the Game ?</p>
+
+    <p>
+    Tic-Tac-Toe is a classic strategy game built using
+    <span class="highlight">HTML</span>,
+    <span class="highlight">CSS</span> &
+    <span class="highlight">JavaScript</span>.
+    It offers a modern interface with
+    <span class="highlight">Player vs Player</span>,
+    <span class="highlight">Player vs Computer</span>,
+    live score tracking, winner detection, and responsive gameplay for all devices.
+</p>
+
+</section>
+
+    <!-- ================= SERVICES ================= -->
+
+    <section id="services" class="services">
+
+        <h2 class="section-heading"> My Services</h2>
+
+        <div class="underline"></div>
+
+        <div class="cards">
+
+            <div class="card">
+
+            <h3>🎮 Interactive Gameplay</h3>
+
+                <p>
+                    Enjoy smooth and responsive Tic-Tac-Toe gameplay.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>🤖 AI Mode</h3>
+
+                <p>
+                    Challenge yourself against our intelligent AI opponent.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>🏆 Live Scoreboard</h3>
+
+                <p>
+                    Track wins, losses and draws in real time.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="contact">
+
+    <h2> Contact Developer</h2>
+    <p>
+Feel free to connect for feedback or collaboration.
+</p>
+
+    <div class="contact-box">
+        
+
+    <p>
+        <i class="fa-solid fa-envelope"></i>
+        adityapratapsingh581@gmail.com
+    </p>
+
+</div>
+
+<div class="contact-box">
+     <p>
+        <i class="fa-solid fa-location-dot"></i>
+        Kanpur, Uttar Pradesh
+    </p>
+</div>
+
+
+
+</section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+    <p class="footer-title">
+
+    🎮 Built with ❤️ using HTML • CSS • JavaScript
+    
+
+    </p>
+    
+     <div class="social-icons">
+
+    <a href="https://github.com/adityasingh475" target="_blank">
+        <i class="fa-brands fa-github"></i> GitHub
+    </a>
+
+    <span class="separator">|</span>
+
+    <a href="https://www.linkedin.com/in/adityasingh475/" target="_blank">
+        <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+    </a>
+
+</div>
+
+    <p class="footer-copy">
+    <span class="thank">✨Thank you</span> for visiting my portfolio!
+    © 2026 Aditya Pratap Singh • Prodigy InfoTech Internship
+</p>
+
+</footer>
+
+    <button id="topBtn">
+
+    ↑
+
+</button>
+
+    <script src="script.js"></script>
+   
+</body>
+
+</html>
