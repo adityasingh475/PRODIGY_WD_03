@@ -11,6 +11,12 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/adityasingh475/PRODIGY_WD_03?style=for-the-badge)
 
 ### ✨ A Modern, Interactive & Responsive Tic-Tac-Toe Game built using HTML, CSS & JavaScript.
+### 🌐 Live Demo
+🔗 https://prodigywd3.vercel.app/
+
+### 💻 GitHub Repository
+🔗 https://github.com/adityasingh475/PRODIGY_WD_03
+
 
 </div>
 
